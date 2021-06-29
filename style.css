@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+  
+}
+
+:root{
+  --base-color: #51A8B1;
+  --secundary-color: #FFFFFF;
+  --card-color: #C4C4C4;
+  --font-title: 900 1.5rem 'Poppins', sans-serif;
+  --font-buttons: 700 0.8rem 'Montserrat', sans-serif;
+  --font-body: 300 0.8rem 'Montserrat', sans-serif;
+}
+/* background */
+#container-image {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+ /* background: url(https://img.freepik.com/fotos-gratis/estadio-de-futebol-com-holofotes_163782-3550.jpg?size=626&ext=jpg); */
+ background: url(assets/background.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+
+/* logo */
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo img{
+  display: flex;
+  max-width:114px ;
+  max-height: 123px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  margin-top:1.375rem;
+  z-index: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: transform 0.2s;
+
+}
+img:hover{
+transform: scale(1.1);
+}
+#card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.content{
+  position: absolute;
+  top: 0;
+  margin-top: 4.5rem;
+  width: 343px;
+  height: 430px;
+  background-color: rgba (196, 196, 196, 0,22);
+  border-radius: 49px;
+  box-shadow: 20px 20px 50px rgba(0,0, 0, 0.8);
+  overflow: hidden;
+  border-top: 0.1px solid rgba(255,255,255,0.5);
+  border-left: 0.1px solid rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+}
+.content h2{
+  padding-top: 5rem ;
+  text-align: center;
+  font: var(--font-title);
+  font-size: 1.5rem;
+  color:#FFFFFF;
+}
+.content p{
+  text-align: center;
+  font: var(--font-body);
+  font-size: 1rem ;
+  color: #FFFFFF;
+  margin-bottom: 0.7rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 10);
+}
+.buttons{
+  margin-top: 6rem;
+}
+.button{
+  margin-top:0.1rem ;
+  margin-bottom: 1.25rem;
+  margin-right:2.6rem ;
+  margin-left:2.6rem;
+  
+}
+.button a{
+  font: var(--font-buttons);
+  display: block;
+  text-align: center;
+  background-color: var(--base-color);
+  padding: 1.1rem;
+  border-radius:75px ;
+  box-shadow: 20px 20px 50px rgba(0,0, 0, 0.3);
+  transition: transform 0.2s;
+
+}
+.buttons a:hover{
+transform: scale(1.1);
+background-color: var(--secundary-color);
+color: var(--base-color);
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: 0.2s;
+  font-size: 1.4rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.icons a:hover{
+ transform: translateY(-5px); 
+ background: none;
+ color: #FFFFFF;
+}
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer p{
+  position: absolute;
+  margin-top:32rem;
+  top: 0;
+  z-index: 1;
+  font: var(--font-body);
+  font-size:0.5rem;
+  color: #FFFFFF;
+}
+
+@media (min-width:350px){
+  #logo img{
+    display: flex;
+    max-width:95px ;
+    max-height: 123px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin-top:0.5rem;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: transform 0.2s;
+  
+  }
+  .content{
+    position: absolute;
+    top: 0;
+    margin-top: 3rem;
+    width: 300px;
+    height: 430px;
+    background-color: rgba (196, 196, 196, 0,22);
+    border-radius: 49px;
+    box-shadow: 20px 20px 50px rgba(0,0, 0, 0.8);
+    overflow: hidden;
+    border-top: 0.1px solid rgba(255,255,255,0.5);
+    border-left: 0.1px solid rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  
+  }
+  .content h2{
+    padding-top: 4.1rem ;
+    text-align: center;
+    font: var(--font-title);
+    font-size: 1.5rem;
+    color:#FFFFFF;
+  }
+  #footer p{
+    position: absolute;
+    margin-top:30rem;
+    top: 0;
+    z-index: 1;
+    font: var(--font-body);
+    font-size:0.5rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 994px){
+  #logo img{
+    display: flex;
+    max-width:114px ;
+    max-height: 123px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin-top:1.375rem;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: transform 0.2s;
+  
+  }
+  img:hover{
+  transform: scale(1.1);
+  }
+  #card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+  .content{
+    position: absolute;
+    top: 0;
+    margin-top: 4.5rem;
+    width: 343px;
+    height: 430px;
+    background-color: rgba (196, 196, 196, 0,22);
+    border-radius: 49px;
+    box-shadow: 20px 20px 50px rgba(0,0, 0, 0.8);
+    overflow: hidden;
+    border-top: 0.1px solid rgba(255,255,255,0.5);
+    border-left: 0.1px solid rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  
+  }
+  .content h2{
+    padding-top: 5rem ;
+    text-align: center;
+    font: var(--font-title);
+    font-size: 1.5rem;
+    color:#FFFFFF;
+  }
+  .content p{
+    text-align: center;
+    font: var(--font-body);
+    font-size: 1rem ;
+    color: #FFFFFF;
+    margin-bottom: 0.7rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 10);
+  }
+  .button{
+    margin-top:0.1rem ;
+    margin-bottom: 1.25rem;
+    margin-right:2.6rem ;
+    margin-left:2.6rem;
+    
+  }
+  .button a{
+    font: var(--font-buttons);
+    display: block;
+    text-align: center;
+    background-color: var(--base-color);
+    padding: 1.1rem;
+    border-radius:75px ;
+    box-shadow: 20px 20px 50px rgba(0,0, 0, 0.3);
+    transition: transform 0.2s;
+  
+  }
+  a:hover{
+  transform: scale(1.1);
+  background-color: var(--secundary-color);
+  color: var(--base-color);
+  }
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer p{
+    position: absolute;
+    margin-top:32rem;
+    top: 0;
+    z-index: 1;
+    font: var(--font-body);
+    font-size:0.5rem;
+    color: #FFFFFF;
+  }
+}
+
